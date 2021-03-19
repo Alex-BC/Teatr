@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Delivery Food — food delivery service</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<!-- <a class="logo">
+				<img src="img/icon/logo.svg" alt="Logo"/>
+			</a>
+			<label class="address">
+				<input type="text" class="input input-address" placeholder="Enter delivery adress"/>
+			</label> -->
+			<div class="buttons">
+				<!-- <span class="user-name"></span> -->
+				<!-- <button class="button button-primary button-auth">
+					<span class="button-auth-svg"></span>
+					<span class="button-text">Log in</span>
+				</button> -->
+				<button class="button button-cart" id="cart-button">
+					<span class="button-cart-svg"></span>
+					<span class="button-text cart-text">Cart(0)</span>
+				</button>
+				<!-- <button class="button button-primary button-out">
+					<span class="button-text">Log Out</span>
+					<span class="button-out-svg"></span>
+				</button> -->
+			</div>
+		</header>
+	</div>
+	<!-- /.container  -->
+
+	<main class="main">
+		<div class="container">
+			<div class="container-promo swiper-container">
+				<div class = "swiper-wrapper">
+					<section class="swiper-slide promo pizza">
+						<h1 class="promo-title">Your favourite <br/> food, delivered at home</h1>
+						<p class="promo-text">
+							Dishes from your favorite restaurants brings a courier in gloves, a mask and an antiseptic.
+						</p>
+					</section>
+					<section class="swiper-slide promo kebab">
+						<h1 class="promo-title">Kebab <br> with a 35% discount</h1>
+						<p class="promo-text">
+							Order kebab in any restaurant until June 10 and get a discount on OMAGAD promo code	
+						</p>
+					</section>
+					<section class="swiper-slide promo vegetables">
+						<h1 class="promo-title">20% off all meals <br> by promo code LOVE.FOOD</h1>
+						<p class="promo-text">
+							A dish from the restaurant will be brought along with a recipe book
+						</p>
+					</section>
+					<section class="swiper-slide promo sushi">
+						<h1 class="promo-title">30% discount <br> in restaurants</h1>
+						<p class="promo-text">
+							Discounts for sets until May 30 with DADADA promo code
+						</p>
+					</section>
+				</div>
+			</div>
+			<section class="restaurants">
+				<div class="section-heading">
+					<h2 class="section-title">Top Restaurants</h2>
+					<!-- <label class="search">
+						<input type="text" class="input input-search" placeholder="Search meals and restaurants"/>
+					</label> -->
+				</div>
+				<div class="cards cards-restaurants">
+				</div>
+				<!-- /.cards -->
+			</section>
+			<section class="menu hide">
+				<div class="section-heading">
+					<h2 class="section-title restaurant-title">Пицца Плюс</h2>
+					<!-- <div class="card-info">
+						<div class="rating">
+							4.5
+						</div>
+						<div class="price">От 900₽ </div>
+						<div class="category">Пицца</div>
+					</div> -->
+					<!-- /.card-info -->
+				</div>
+				<div class="cards cards-menu">
+				</div>
+				<!-- /.cards -->
+			</section>
+
+		</div>
+		<!-- /.container -->
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<!-- <div class="footer-block"> -->
+				<img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
+				<!-- <nav class="footer-nav">
+					<a href="#" class="footer-link">Partners</a>
+					<a href="#" class="footer-link">Delivery</a>
+					<a href="#" class="footer-link">FAQ</a>
+					<a href="#" class="footer-link">Contacts</a>
+				</nav> -->
+				<!-- <div class="social-links">
+					<a href="#" class="social-link"><img src="img/social/instagram.svg" alt="instagram"/></a>
+					<a href="#" class="social-link"><img src="img/social/fb.svg" alt="facebook"/></a>
+					<a href="#" class="social-link"><img src="img/social/vk.svg" alt="vk"/></a>
+				</div> -->
+				<!-- /.social-links -->
+			<!-- </div> -->
+			<!-- /.footer-block -->
+		</div>
+	</footer>
+
+	<div class="modal modal-cart">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h3 class="modal-title">Cart</h3>
+				<button class="close">&times;</button>
+			</div>
+			<!-- /.modal-header -->
+			<div class="modal-body">
+				<!-- <div class="food-row">
+					<span class="food-name">Ролл угорь стандарт</span>
+					<strong class="food-price">250 ₽</strong>
+					<div class="food-counter">
+						<button class="counter-button">-</button>
+						<span class="counter">1</span>
+						<button class="counter-button">+</button>
+					</div>
+				</div> -->
+				<!-- /.foods-row -->
+				<!-- <div class="food-row">
+					<span class="food-name">Ролл угорь стандарт</span>
+					<strong class="food-price">250 ₽</strong>
+					<div class="food-counter">
+						<button class="counter-button">-</button>
+						<span class="counter">1</span>
+						<button class="counter-button">+</button>
+					</div>
+				</div>
+				<!-- /.foods-row -->
+				<!-- <div class="food-row">
+					<span class="food-name">Ролл угорь стандарт</span>
+					<strong class="food-price">250 ₽</strong>
+					<div class="food-counter">
+						<button class="counter-button">-</button>
+						<span class="counter">1</span>
+						<button class="counter-button">+</button>
+					</div>
+				</div> -->
+				<!-- /.foods-row -->
+				<!-- <div class="food-row">
+					<span class="food-name">Ролл угорь стандарт</span>
+					<strong class="food-price">250 ₽</strong>
+					<div class="food-counter">
+						<button class="counter-button">-</button>
+						<span class="counter">1</span>
+						<button class="counter-button">+</button>
+					</div>
+				</div> --> -->
+				<!-- /.foods-row -->
+			</div>
+			<!-- /.modal-body -->
+			<div class="modal-footer">
+				<span class="modal-pricetag">0 ₽</span>
+				<div class="footer-buttons">
+					<button class="button button-primary">Place Order</button>
+					<button class="button clear-cart">Clear All</button>
+				</div>
+			</div>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
+	<!-- <div class="modal-auth"> -->
+		<!-- <div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Authorization </legend>
+					<label class="label-auth">
+						<span>Name</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Password</span>
+						<input id="password" type="password" placeholder ="">
+					</label>
+				</fieldset> -->
+				<!-- /.modal-body -->
+				<!-- <div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Log in</button>
+					</div>
+				</div>
+			</form> -->
+			<!-- /.modal-footer -->
+		<!-- </div> -->
+		<!-- /.modal-dialog -->
+	<!-- </div> -->
+
+	<!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+[
+    {
+        "id": "gl01",
+        "name": "Dumplings calf with piglet",
+        "description": "Real self-made dumplings made of fluffy dough on rustic yolks and sour cream",
+        "price": 390,
+        "image": "img/gusi-lebedi/dumplings.jpg"
+    },
+    {
+        "id": "gl02",
+        "name": "Pilaf",
+        "description": "Pilaf on the coals of regular rice with lamb, spices and vegetables in fat tail fat",
+        "price": 520,
+        "image": "img/gusi-lebedi/plov.jpg"
+    },
+    {
+        "id": "gl03",
+        "name": "Chicken on a spit",
+        "description": "Served on pita bread with fresh tomato and cucumber, with pickled onions and kebab sauce",
+        "price": 490,
+        "image": "img/gusi-lebedi/chick.jpg"
+    },
+    {
+        "id": "gl04",
+        "name": "Chicken pock soup",
+        "description": "Chicken carcass, carrots, pasta, greens, egg, salt, spices.",
+        "price": 140,
+        "image": "img/gusi-lebedi/chicken-soup.jpg"
+    },
+    {
+        "id": "gl05",
+        "name": "Pig Chop",
+        "description": "A thick piece of steamed pork with tomatoes and mushrooms under a cheese crust",
+        "price": 490,
+        "image": "img/gusi-lebedi/pig-chop.jpg"
+    },
+    {
+        "id": "gl06",
+        "name": "Calf in a creamy sauce",
+        "description": "The calf with mushrooms and onions is fried in a creamy cream sauce with mashed potatoes and pickles.",
+        "price": 530,
+        "image": "img/gusi-lebedi/calf-sauce.jpg"
+    },
+    {
+        "id": "gl07",
+        "name": "Baked pike perch",
+        "description": "Fillet of pike perch with potatoes, sour cream, herbs and onions",
+        "price": 490,
+        "image": "img/gusi-lebedi/zander.jpg"
+    },
+    {
+        "id": "gl08",
+        "name": "Murmansk squid",
+        "description": "Murmansk squid with garlic oil",
+        "price": 420,
+        "image": "img/gusi-lebedi/squid.jpg"
+    },
+    {
+        "id": "gl09",
+        "name": "Pike ear on crucian carp",
+        "description": "A rich marching ear on four fish, laurel, pepper and onion with vodka.",
+        "price": 380,
+        "image": "img/gusi-lebedi/ear.jpg"
+    }
+]
