@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sd01",
+    "name": "Картопля фрі",
+    "description": "",
+    "price": 50,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "sd02",
+    "name": "Картопля по-селянськи",
+    "description": "",
+    "price": 50,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "sd03",
+    "name": "Банош з лисичками",
+    "description": "крупа кукурудзяна, вершки, сир моцарела, цибуля ріпчаста, часник, масло вершкове, гриби лисички, вино біле столове",
+    "price": 75,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "sd04",
+    "name": "Картопля смажена з лисичками",
+    "description": "картопля, гриби лисички, цибуля ріпчаста, петрушка свіжа",
+    "price": 45,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "sd05",
+    "name": "Рис басматі у вершковому соусі зі шпинатом",
+    "description": "",
+    "price": 70,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "sd06",
+    "name": "Картопляне пюре",
+    "description": "",
+    "price": 45,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  }
+]

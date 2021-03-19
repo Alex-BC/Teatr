@@ -1,0 +1,30 @@
+[
+  {
+    "id": "d01",
+    "name": "Торт морквяний",
+    "description": "коржі морквяні, сир маскарпоне, фреш апольсину, цедра апольсину, горіх грецький",
+    "price": 80,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "d02",
+    "name": "Штрудель з гарбузом та яблуком",
+    "description": "тісто листково-дріжджове, яблуко, гарбуз, горіх грецький, родзинки, вершкове масло, сироп монін (яблуко), морозиво",
+    "price": 85,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "d03",
+    "name": "Амелі",
+    "description": "лимонний курд, сир маскарпоне, печиво Орео",
+    "price": 70,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "d04",
+    "name": "Гур'єва",
+    "description": "крупа манна, кокосове молоко, мигдальні пластівці, пюре маракуйя-манго, крем-сир, соус малиновий, молоко, вершкове масло",
+    "price": 80,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  }
+]
