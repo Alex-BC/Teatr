@@ -234,14 +234,14 @@ function openGoods(event) {
   if (restaurant) {
     // if (login) {
     // const [name, price, stars, kitchen] = restaurant.info;
-    // const name = restaurant.info;
+    const name = restaurant.info;
 
     cardsMenu.textContent = "";
     containerPromo.classList.add("hide");
     restaurants.classList.add("hide");
     menu.classList.remove("hide");
 
-    // restaurantTitle.textContent = name;
+    restaurantTitle.textContent = name;
     // rating.textContent = stars;
     // minPrice.textContent = `From ${price} грн`;
     // category.textContent = kitchen;

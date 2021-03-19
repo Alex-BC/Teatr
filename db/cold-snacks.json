@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cs01",
+    "name": "Білоцерківське Тріо",
+    "description": "паштет з курячої печінки/ хумус / форшмак / чіабата",
+    "price": 50,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "cs02",
+    "name": "Оливки / Маслини",
+    "description": "",
+    "price": 60,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "cs03",
+    "name": "Асорті тапасів",
+    "description": "чіабата пшенична грильована, ростбіф, перець солодкий запечений, сир дор блю / соус гуакамоле, креветка / тигрова, вершковий сир / сир брі, хамон",
+    "price": 140,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "cs04",
+    "name": "Плато сирів",
+    "description": "сир козячий горіховий, сир дор блю, сир брі, сир пармезан, варення з ожини, грісіні, гранат",
+    "price": 175,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "cs05",
+    "name": "Асорті вяленого м'яса",
+    "description": "ковбаса чорізо, ковбаса фует, прошуто, грісіні",
+    "price": 120,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "cs06",
+    "name": "Тарілка міського сала",
+    "description": "сало шпик, сало генеральське, сало копчене, хліб бородинський, гірчиця, часник, цибуля молода",
+    "price": 90,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  }
+]
