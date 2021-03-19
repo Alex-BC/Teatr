@@ -27,7 +27,7 @@ const modalPrice = document.querySelector(".modal-pricetag");
 const buttonClearCart = document.querySelector(".clear-cart");
 const cartText = document.querySelector(".cart-text");
 
-let login = localStorage.getItem("gloDelivery");
+// let login = localStorage.getItem("gloDelivery");
 
 let cart = [];
 cart = JSON.parse(localStorage.getItem("cartStorage"));
@@ -144,18 +144,19 @@ function createCardRestaurant(restaurant) {
   //destructuring
   const {
     image,
-    kitchen,
+    // kitchen,
     name,
-    price,
+    // price,
     products,
-    stars,
-    time_of_delivery: timeOfDelivery, // change name
+    // stars,
+    // time_of_delivery: timeOfDelivery, // change name
   } = restaurant;
 
   const card = document.createElement("a");
   card.className = "card card-restaurant";
   card.products = products;
-  card.info = [name, price, stars, kitchen];
+  // card.info = [name, price, stars, kitchen];
+  card.info = name;
 
   //   card.insertAdjacentHTML(
   //     "beforeend",
@@ -232,14 +233,15 @@ function openGoods(event) {
 
   if (restaurant) {
     // if (login) {
-    const [name, price, stars, kitchen] = restaurant.info;
+    // const [name, price, stars, kitchen] = restaurant.info;
+    // const name = restaurant.info;
 
     cardsMenu.textContent = "";
     containerPromo.classList.add("hide");
     restaurants.classList.add("hide");
     menu.classList.remove("hide");
 
-    restaurantTitle.textContent = name;
+    // restaurantTitle.textContent = name;
     // rating.textContent = stars;
     // minPrice.textContent = `From ${price} грн`;
     // category.textContent = kitchen;
@@ -359,7 +361,10 @@ function changeCount(event) {
 }
 
 function init() {
-  getData("./db/partners.json").then((data) => {
+  // getData("./db/partners.json").then((data) => {
+  //   data.forEach(createCardRestaurant);
+  // });
+  getData("./db/menu.json").then((data) => {
     data.forEach(createCardRestaurant);
   });
 

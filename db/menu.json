@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Салати",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "salads.json"
+    },
+    {
+        "name": "Перші страви",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Холодні закуски",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Основні страви",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Гарніри",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Бургери",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Паста",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Піца",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Напої",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    },
+    {
+        "name": "Десерти",
+        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
+        "products": "pizza-plus.json"
+    }
+]

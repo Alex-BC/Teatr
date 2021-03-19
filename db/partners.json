@@ -6,7 +6,7 @@
         "price": 900,
         "kitchen": "Pizza",
         "image": "img/pizza-plus/preview.jpg",
-        "products": "pizza-plus.json"
+        "products": "salads.json"
     },
     {
         "name": "Tanuki",
