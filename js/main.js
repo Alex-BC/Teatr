@@ -450,3 +450,34 @@ function init() {
 }
 
 init();
+
+function initDrinks() {
+  getData("./db/drinks.json").then((data) => {
+    data.forEach(createCardRestaurant);
+  });
+
+  updateTotalItemCart();
+  // clear the Cart
+  buttonClearCart.addEventListener("click", () => {
+    cart.length = 0;
+    // renderCart();
+    localStorage.removeItem("cartStorage");
+  });
+
+  // logo.addEventListener("click", returnMain);
+
+  // // Change count in the Cart
+  // modalBody.addEventListener("click", changeCount);
+
+  // cardsRestaurants.addEventListener("click", openGoods);
+
+  // // add click to the Cart
+  // cartButton.addEventListener("click", renderCart);
+  // cartButton.addEventListener("click", toggleModal);
+
+  // // work with restaurant cards
+  // closed.addEventListener("click", toggleModal);
+
+  // // work with the Cart
+  // cardsMenu.addEventListener("click", addToCart);
+}
