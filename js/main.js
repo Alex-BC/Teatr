@@ -451,33 +451,64 @@ function init() {
 
 init();
 
+function openDrinks(event) {
+  const target = event.target;
+
+  const restaurant = target.closest(".card-restaurant"); // go to this parent element
+
+  if (restaurant) {
+    // if (login) {
+    // const [name, price, stars, kitchen] = restaurant.info;
+    const name = restaurant.info;
+
+    cardsMenu.textContent = "";
+    containerPromo.classList.add("hide");
+    restaurants.classList.add("hide");
+    menu.classList.remove("hide");
+
+    restaurantTitle.textContent = name;
+    // rating.textContent = stars;
+    // minPrice.textContent = `From ${price} грн`;
+    // category.textContent = kitchen;
+
+    getData(`./db/${restaurant.products}`).then((data) =>
+      data.forEach(createCardGood)
+    );
+    // } else {
+    //   toggleModalAuth();
+    // }
+  }
+}
+
 function initDrinks() {
   getData("./db/drinks.json").then((data) => {
     data.forEach(createCardRestaurant);
   });
 
-  updateTotalItemCart();
+  // updateTotalItemCart();
   // clear the Cart
-  buttonClearCart.addEventListener("click", () => {
-    cart.length = 0;
-    // renderCart();
-    localStorage.removeItem("cartStorage");
-  });
+  // buttonClearCart.addEventListener("click", () => {
+  //   cart.length = 0;
+  //   // renderCart();
+  //   renderDrinksCart();
+  //   localStorage.removeItem("cartStorage");
+  // });
 
   // logo.addEventListener("click", returnMain);
 
   // // Change count in the Cart
   // modalBody.addEventListener("click", changeCount);
 
-  // cardsRestaurants.addEventListener("click", openGoods);
+  cardsRestaurants.addEventListener("click", openDrinks);
 
-  // // add click to the Cart
+  // add click to the Cart
   // cartButton.addEventListener("click", renderCart);
   // cartButton.addEventListener("click", toggleModal);
 
-  // // work with restaurant cards
+  // work with restaurant cards
   // closed.addEventListener("click", toggleModal);
 
-  // // work with the Cart
+  // work with the Cart
   // cardsMenu.addEventListener("click", addToCart);
 }
+initDrinks();
