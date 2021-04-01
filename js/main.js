@@ -193,7 +193,7 @@ function createCardRestaurant(restaurant) {
   cardsRestaurants.insertAdjacentElement("beforeend", card);
 }
 
-// Crete Cards for Items
+// Create Cards for Items
 function createCardGood({ description, image, name, price, id }) {
   const card = document.createElement("div");
   card.className = "card";
