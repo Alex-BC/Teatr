@@ -12,6 +12,7 @@ const buttonAuth = document.querySelector(".button-auth");
 // const userName = document.querySelector(".user-name");
 // const buttonOut = document.querySelector(".button-out");
 const cardsRestaurants = document.querySelector(".cards-restaurants");
+const cardsRestaurantsAlco = document.querySelector(".cards-restaurants-alco");
 const containerPromo = document.querySelector(".container-promo");
 const restaurants = document.querySelector(".restaurants");
 const menu = document.querySelector(".menu");
@@ -454,64 +455,115 @@ function init() {
 
 init();
 
+function initDrinks() {
+  getData("./db/drinks.json").then((data) => {
+    data.forEach(createCardRestaurantAlco);
+  });
+
+  updateTotalItemCart();
+  // clear the Cart
+  buttonClearCart.addEventListener("click", () => {
+    cart.length = 0;
+    // renderCart();
+    renderDrinksCart();
+    localStorage.removeItem("cartStorage");
+  });
+
+  logo.addEventListener("click", returnMain);
+
+  // // Change count in the Cart
+  modalBody.addEventListener("click", changeCount);
+
+  cardsRestaurantsAlco.addEventListener("click", openDrinks);
+
+  // add click to the Cart
+  cartButton.addEventListener("click", renderCart);
+  cartButton.addEventListener("click", toggleModal);
+
+  // work with restaurant cards
+  closed.addEventListener("click", toggleModal);
+
+  // work with the Cart
+  cardsMenu.addEventListener("click", addToCart);
+}
+initDrinks();
+
 function openDrinks(event) {
   const target = event.target;
 
   const restaurant = target.closest(".card-restaurant"); // go to this parent element
 
-  if (restaurant) {
-    // if (login) {
-    // const [name, price, stars, kitchen] = restaurant.info;
-    const name = restaurant.info;
+  // if (login) {
+  // const [name, price, stars, kitchen] = restaurant.info;
+  const name = restaurant.info;
 
-    cardsMenu.textContent = "";
-    containerPromo.classList.add("hide");
-    restaurants.classList.add("hide");
-    menu.classList.remove("hide");
+  cardsMenu.textContent = "";
+  containerPromo.classList.add("hide");
+  restaurants.classList.add("hide");
+  menu.classList.remove("hide");
 
-    restaurantTitle.textContent = name;
-    // rating.textContent = stars;
-    // minPrice.textContent = `From ${price} грн`;
-    // category.textContent = kitchen;
+  restaurantTitle.textContent = name;
+  // rating.textContent = stars;
+  // minPrice.textContent = `From ${price} грн`;
+  // category.textContent = kitchen;
 
-    getData(`./db/${restaurant.products}`).then((data) =>
-      data.forEach(createCardGood)
-    );
-    // } else {
-    //   toggleModalAuth();
-    // }
-  }
+  getData(`./db/${restaurant.products}`).then((data) =>
+    data.forEach(createCardGoodAlco)
+  );
+  // } else {
+  //   toggleModalAuth();
+  // }
 }
 
-function initDrinks() {
-  getData("./db/drinks.json").then((data) => {
-    data.forEach(createCardRestaurant);
-  });
+function createCardGoodAlco({ image, name }) {
+  const card = document.createElement("div");
+  card.className = "card";
 
-  // updateTotalItemCart();
-  // clear the Cart
-  // buttonClearCart.addEventListener("click", () => {
-  //   cart.length = 0;
-  //   // renderCart();
-  //   renderDrinksCart();
-  //   localStorage.removeItem("cartStorage");
-  // });
+  card.insertAdjacentHTML(
+    "beforeend",
+    `
+      <img src="${image}" alt="${name}" class="card-image"/>
+      <div class="card-text">
+          <div class="card-heading">
+              <h3 class="card-title card-title-reg">${name}</h3>
+          </div>
 
-  logo.addEventListener("click", returnMain);
+          </div>
 
-  // // Change count in the Cart
-  // modalBody.addEventListener("click", changeCount);
+          </div>
+      </div>
+  </div>
+      `
+  );
 
-  // cardsRestaurants.addEventListener("click", openDrinks);
-
-  // add click to the Cart
-  // cartButton.addEventListener("click", renderCart);
-  // cartButton.addEventListener("click", toggleModal);
-
-  // work with restaurant cards
-  // closed.addEventListener("click", toggleModal);
-
-  // work with the Cart
-  // cardsMenu.addEventListener("click", addToCart);
+  cardsMenu.insertAdjacentElement("beforeend", card);
 }
-// initDrinks();
+function createCardRestaurantAlco(restaurant) {
+  const {
+    image,
+
+    name,
+
+    products,
+  } = restaurant;
+
+  const card = document.createElement("a");
+  card.className = "card card-restaurant";
+  card.products = products;
+
+  card.info = name;
+
+  card.insertAdjacentHTML(
+    "beforeend",
+    `
+    <img src="${image}" alt="${name}" class="card-image"/>
+    <div class="card-text">
+        <div class="card-heading">
+            <h3 class="card-title">${name}</h3>
+        </div>
+    </div>
+    `
+  );
+
+  cardsRestaurantsAlco.insertAdjacentElement("beforeend", card);
+}

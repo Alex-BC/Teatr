@@ -40,11 +40,6 @@
         "products": "pizza.json"
     },
     {
-        "name": "Напої",
-        "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
-        "products": "drinks.json"
-    },
-    {
         "name": "Десерти",
         "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg",
         "products": "desserts.json"

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "md01",
+    "name": "Реберця з солодким соусом чилі",
+    "description": "",
+    "price": 150,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "md02",
+    "name": "Стейк Філе Міньйон",
+    "description": "",
+    "price": 190,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "md03",
+    "name": "Куряча грудка, сид В баконі",
+    "description": "",
+    "price": 80,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "md04",
+    "name": "Стейк антрекот зі свинини су-від",
+    "description": "",
+    "price": 140,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "md05",
+    "name": "Дорадо з овочами гриль",
+    "description": "",
+    "price": 230,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+  {
+    "id": "md06",
+    "name": "Філе червоного окуня",
+    "description": "",
+    "price": 40,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+   {
+    "id": "md07",
+    "name": "Мідії в азіатському стилі",
+    "description": "",
+    "price": 175,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  },
+   {
+    "id": "md08",
+    "name": "Шніцель",
+    "description": "биток свинний в паніровці, мікс салату, картопляне пюре з трюфельною олією",
+    "price": 90,
+    "image": "https://bunkermuz.menu.in.ua/wp-content/uploads/2020/11/salat-6-300x300.jpg"
+  }
+]

@@ -850,3 +850,10 @@ button {
         margin-right: 0;
     }
 }
+
+.cards-drinks { 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
