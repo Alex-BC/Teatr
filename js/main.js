@@ -15,7 +15,7 @@ const cardsRestaurants = document.querySelector(".cards-restaurants");
 const containerPromo = document.querySelector(".container-promo");
 const restaurants = document.querySelector(".restaurants");
 const menu = document.querySelector(".menu");
-// const logo = document.querySelector(".logo");
+const logo = document.querySelector(".logo");
 const cardsMenu = document.querySelector(".cards-menu");
 const restaurantTitle = document.querySelector(".restaurant-title");
 // const rating = document.querySelector(".rating");
@@ -255,11 +255,11 @@ function openGoods(event) {
   }
 }
 
-// function returnMain() {
-//   containerPromo.classList.remove("hide");
-//   restaurants.classList.remove("hide");
-//   menu.classList.add("hide");
-// }
+function returnMain() {
+  containerPromo.classList.remove("hide");
+  restaurants.classList.remove("hide");
+  menu.classList.add("hide");
+}
 
 function updateTotalItemCart() {
   const totalItemsCart = cart.reduce(function (result, item) {
@@ -367,6 +367,9 @@ function init() {
   getData("./db/menu.json").then((data) => {
     data.forEach(createCardRestaurant);
   });
+  // getData("./db/drinks.json").then((data) => {
+  //   data.forEach(createCardRestaurant);
+  // });
 
   updateTotalItemCart();
   // clear the Cart
@@ -376,7 +379,7 @@ function init() {
     localStorage.removeItem("cartStorage");
   });
 
-  // logo.addEventListener("click", returnMain);
+  logo.addEventListener("click", returnMain);
 
   // Change count in the Cart
   modalBody.addEventListener("click", changeCount);
@@ -494,12 +497,12 @@ function initDrinks() {
   //   localStorage.removeItem("cartStorage");
   // });
 
-  // logo.addEventListener("click", returnMain);
+  logo.addEventListener("click", returnMain);
 
   // // Change count in the Cart
   // modalBody.addEventListener("click", changeCount);
 
-  cardsRestaurants.addEventListener("click", openDrinks);
+  // cardsRestaurants.addEventListener("click", openDrinks);
 
   // add click to the Cart
   // cartButton.addEventListener("click", renderCart);
@@ -511,4 +514,4 @@ function initDrinks() {
   // work with the Cart
   // cardsMenu.addEventListener("click", addToCart);
 }
-initDrinks();
+// initDrinks();
